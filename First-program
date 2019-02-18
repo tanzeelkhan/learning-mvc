@@ -1,0 +1,36 @@
+
+//File name: HomeController.cs under Controllers
+
+using System.Web.Mvc;
+
+namespace MVCDemoProject.Controllers
+{
+    public class HomeController : Controller
+    {
+
+        public string Index(string id , string name)
+        {
+
+            //return "ID: " + id + "and Name: " + Request.QueryString["name"]; 
+            return "ID: " + id + "and Name: " + name; 
+        }
+        public string Details()
+        {
+            return "Hello from Details Function of MVC Application";
+        }
+    }
+
+    public class ProfileController : Controller
+    {
+
+        public string Index(string id, string name)
+        {
+            return "Hello from Profile Controller";
+        }
+        public string Details()
+        {
+            return "Hello from Details Function of Profile Controller";
+        }
+
+    }
+}
